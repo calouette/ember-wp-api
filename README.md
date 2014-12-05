@@ -19,6 +19,26 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
+## Routes
+
+Currently the following routes are supported:
+
+```
+/:term_id
+/:term_id/:subterm_id
+/:term_id/:subterm_id/:post_id
+```
+
+Note: Category and Post slugs are used instead of the actual id's in the routes.
+
+WordPress categories are loaded into Term models which have parent and children properties. The application will load all available categories using the WP API and display any categories without a parent as a main navigation.
+
+Post comments are loaded asynchronously and retrieved by using post.get('comments'). The PostSerializer also adds the hash {links: comments: 'comments'}. This combined with loading the comments asynchronously and using .get instead of .find was the only solution for now I could find to request the comments for a post using a nested API request.
+
+## Make it crawlable
+I am thinking of using Apache's mod_rewrite to serve static html pages provided by WordPress to search engines
+
+
 ## Running / Development
 
 * `ember server`
