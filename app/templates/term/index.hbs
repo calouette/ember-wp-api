@@ -1,0 +1,12 @@
+<hr />
+<h1>Posts in {{{model.name}}} ({{model.numOfPosts}})</h1>
+<ul>
+	{{#each term in model.children}}
+		{{#each post in term.posts}}
+			<div>
+				<h3>{{#link-to 'subterm.post' model.children.firstObject.slug post.slug}}{{{post.title}}}{{/link-to}}</h3>
+				<hr />
+			</div>
+		{{/each}}
+	{{/each}}
+</ul>

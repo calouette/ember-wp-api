@@ -1,0 +1,9 @@
+{{#if model.children.length}}
+	<h1>{{name}} Subcategories ({{model.children.length}})</h1>
+	<ul class="nav nav-pills">
+		{{#each item in model.children}}
+			<li>{{#link-to 'subterm' model.slug item.slug}}{{{item.name}}}{{/link-to}}</li>
+		{{/each}}
+	</ul>
+{{/if}}
+{{outlet}}

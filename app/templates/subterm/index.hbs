@@ -1,0 +1,9 @@
+<h1>Posts ({{model.numOfPosts}})</h1>
+<ul>
+{{#each post in model.posts}}
+	<div>
+		<h3>{{#link-to 'subterm.post' post.slug}}{{{post.title}}}{{/link-to}}</h3>
+		<hr />
+	</div>
+{{/each}}	
+</ul>

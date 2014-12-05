@@ -1,0 +1,22 @@
+{
+  "name": "ember-wp-api",
+  "dependencies": {
+    "handlebars": "2.0.0",
+    "jquery": "^1.11.1",
+    "ember": "canary",
+    "ember-data": "canary",
+    "ember-resolver": "~0.1.7",
+    "loader.js": "stefanpenner/loader.js#1.0.1",
+    "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.3",
+    "ember-cli-test-loader": "rwjblue/ember-cli-test-loader#0.0.4",
+    "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
+    "ember-qunit": "0.1.8",
+    "ember-qunit-notifications": "0.0.4",
+    "qunit": "~1.15.0"
+  },
+  "resolutions": {
+    "handlebars": ">= 2.0.0 < 3.0.0",
+    "ember": "canary",
+    "ember-data": "canary"
+  }
+}

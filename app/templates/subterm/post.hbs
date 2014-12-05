@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">{{{title}}}</div>
+	<div class="panel-body">
+		{{{model.content}}}
+		{{#if model.comments.length}}
+			<div class="panel panel-info">
+				<div class="panel-heading">Comments</div>
+				{{#each comment in model.comments}}
+					<div class="panel-body">{{{comment.content}}}</div>
+				{{/each}}
+			</div>	
+		{{/if}}
+	</div>
+</div>

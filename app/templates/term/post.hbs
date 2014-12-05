@@ -1,0 +1,10 @@
+<hr />
+<h1>{{{title}}}</h1>
+<p>{{{model.content}}}</p>
+<ul>
+	{{#each comment in model.comments}}
+		<li>
+			{{{comment.content}}}
+		</li>
+	{{/each}}
+</ul>

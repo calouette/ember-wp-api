@@ -1,0 +1,9 @@
+<h1>Categories ({{model.length}})</h1>
+<ul class="nav nav-pills">
+	{{#each item in model}}
+		<li>{{#link-to 'term' item.slug}}{{{item.name}}}{{/link-to}}</li>
+	{{/each}}
+</ul>
+
+
+{{outlet}}
