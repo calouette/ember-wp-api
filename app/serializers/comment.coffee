@@ -1,7 +1,7 @@
 `import DS from 'ember-data';
 import WordpressSerializerMixin from 'ember-wp-api/mixins/wordpress-serializer'`
 
-CommentSerializer = DS.RESTSerializer.extend DS.EmbeddedRecordsMixin, WordpressSerializerMixin,
+CommentSerializer = DS.RESTSerializer.extend WordpressSerializerMixin,
     
  extractArray: (store, type, payload) ->
   payload =

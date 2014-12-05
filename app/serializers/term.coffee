@@ -1,7 +1,7 @@
 `import DS from 'ember-data';
 import WordpressSerializerMixin from 'ember-wp-api/mixins/wordpress-serializer'`
 
-TermSerializer = DS.RESTSerializer.extend DS.EmbeddedRecordsMixin, WordpressSerializerMixin,
+TermSerializer = DS.RESTSerializer.extend WordpressSerializerMixin,
  attrs:
   parent:
    embedded: 'always'
