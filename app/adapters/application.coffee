@@ -1,7 +1,7 @@
 `import DS from 'ember-data'`
 
 ApplicationAdapter = DS.RESTAdapter.extend
- host: 'http://localhost/daily'
+ host: 'http://localhost'
  namespace: 'wp-json'
   
   
